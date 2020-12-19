@@ -27,7 +27,7 @@ app.post('/students', async (req, res) =>{
         time: new Date(),
         isDeleted : false
     }
-    data.push(newItem);
+    Student.push(newItem);
     res.status(201).json(newItem);
 })
 
@@ -59,3 +59,6 @@ app.delete('/students/:id', async (req, res) =>{
 
 
 module.exports = app;
+
+
+
